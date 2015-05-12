@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{D8E043B1-57EE-A847-CE8F-B10118322163}</ProjectGuid>
+	<ProjectGuid>{52D7B22F-3E55-7D31-43B7-0CA224112351}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,9 +46,52 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraController.cs" />
-     <Compile Include="Assets\ChestScript.cs" />
-     <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\2DLightAssets\2DLight\DynamicLight.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\2.MultiplesLights\interface_manager.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\3.CoverExplosion(shockwave)\ReachedEventManager.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\3.CoverExplosion(shockwave)\bomb.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\9.ConeOfSight\SpawnCasters.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\TablaSenoCoseno.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\TimerClass.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\interface_touch.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\Helpers\interface_touch2.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\IntelliMesh\IntelliderCircle.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\IntelliMesh\IntelliderConvexxxxxxxx.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\IntelliMesh\SmoothShadowFollow.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\SetRenderQueue.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\restoreStone.cs" />
+     <Compile Include="Assets\2DLightAssets\Scripts\rotate.cs" />
+     <Compile Include="Assets\Package\Chronos\AnimatorRecorder.cs" />
+     <Compile Include="Assets\Package\Chronos\AreaClock.cs" />
+     <Compile Include="Assets\Package\Chronos\AreaClock2D.cs" />
+     <Compile Include="Assets\Package\Chronos\AreaClock3D.cs" />
+     <Compile Include="Assets\Package\Chronos\ChronosException.cs" />
+     <Compile Include="Assets\Package\Chronos\Clock.cs" />
+     <Compile Include="Assets\Package\Chronos\GlobalClock.cs" />
+     <Compile Include="Assets\Package\Chronos\LocalClock.cs" />
+     <Compile Include="Assets\Package\Chronos\Occurrences\DelegateOccurrence.cs" />
+     <Compile Include="Assets\Package\Chronos\Occurrences\ForwardDelegateOccurrence.cs" />
+     <Compile Include="Assets\Package\Chronos\Occurrences\Occurrence.cs" />
+     <Compile Include="Assets\Package\Chronos\PhysicsTimer.cs" />
+     <Compile Include="Assets\Package\Chronos\PhysicsTimer2D.cs" />
+     <Compile Include="Assets\Package\Chronos\PhysicsTimer3D.cs" />
+     <Compile Include="Assets\Package\Chronos\Recorder.cs" />
+     <Compile Include="Assets\Package\Chronos\TimeState.cs" />
+     <Compile Include="Assets\Package\Chronos\Timekeeper.cs" />
+     <Compile Include="Assets\Package\Chronos\Timeline.cs" />
+     <Compile Include="Assets\Package\Chronos\TransformRecorder.cs" />
+     <Compile Include="Assets\Package\Chronos\Utilities\Singleton.cs" />
+     <Compile Include="Assets\Package\Chronos\WindZoneSpeeds.cs" />
+     <Compile Include="Assets\Scripts\BaseBehaviour.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\ChestScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <None Include="Assets\2DLightAssets\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
+     <None Include="Assets\2DLightAssets\Shaders\DepthMask.shader" />
+     <None Include="Assets\2DLightAssets\Shaders\OffsetShader.shader" />
+     <None Include="Assets\2DLightAssets\Shaders\VertexColor.shader" />
+     <None Include="Assets\Package\Readme.txt" />
+     <None Include="Assets\2DLightAssets\Shaders\Gradient-ZFighting.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
