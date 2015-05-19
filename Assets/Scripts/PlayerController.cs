@@ -65,11 +65,12 @@ public class PlayerController : BaseBehaviour
 		}
 	}
 
-//	void OnCollisionEnter2D (Collision2D other)
-//	{
-//		if (other.gameObject.isStatic)
-//		{
-//			canMove = false;
-//		}
-//	}
+	void OnCollisionEnter2D (Collision2D other)
+	{
+		pos = transform.position;
+		if (other.gameObject.tag == "Chest")
+		{
+			other.gameObject.transform.Translate(new Vector2(other.transform.position.x - pos.x, other.transform.position.y));
+		}
+	}
 }
