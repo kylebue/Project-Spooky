@@ -70,7 +70,7 @@ public class PlayerController : BaseBehaviour
 		pos = transform.position;
 		if (other.gameObject.tag == "Chest")
 		{
-			other.gameObject.transform.Translate(new Vector2(other.transform.position.x - pos.x, other.transform.position.y));
+			other.transform.position = Vector2.Lerp(other.transform.position, new Vector2(other.transform.position.x - pos.x, other.transform.position.y), 1.0f);
 		}
 	}
 }
