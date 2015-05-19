@@ -3,18 +3,33 @@ using Chronos;
 
 public class TimeControl : MonoBehaviour 
 {	
-	// Update is called once per frame
+	// CLOCKS
+	Clock playerClock;
+
+	protected bool playerIsSlowed = false;
+
 	void Update () 
 	{
-		Clock playerClock = Timekeeper.instance.Clock ("Player");
+		playerClock = Timekeeper.instance.Clock ("Player");
 
-		if (Input.GetKey(KeyCode.LeftControl))
+		PlayerSlowDown ();
+	}
+
+	// Method to (un)initiate slow down on the Player
+	void PlayerSlowDown()
+	{
+		if (Input.GetKeyDown(KeyCode.LeftControl))
 		{
-			playerClock.localTimeScale = 0.5f;
-		}
-		else
-		{
-			playerClock.localTimeScale = 1.0f;
+			if (!playerIsSlowed)
+			{
+				playerClock.LerpTimeScale(0.5f, 1.0f, false);
+				playerIsSlowed = true;
+			}
+			else
+			{
+				playerClock.LerpTimeScale(1.0f, 1.0f, false);
+				playerIsSlowed = false;
+			}
 		}
 	}
 }
