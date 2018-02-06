@@ -14,7 +14,7 @@ public class SmoothShadowFollow : MonoBehaviour {
 
 	void Start () {
 		LightTarget = GameObject.Find("2DLight");
-		mShadow = gameObject.transform.FindChild("smooth").gameObject;
+		mShadow = gameObject.transform.Find("smooth").gameObject;
 	}
 	
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class SmoothShadowFollow : MonoBehaviour {
 			
 
 		if(!mShadow){
-			mShadow = gameObject.transform.FindChild("smooth").gameObject;
+			mShadow = gameObject.transform.Find("smooth").gameObject;
 			if(!mShadow){
 				Debug.LogWarning("NOT Collider Found");
 				return;

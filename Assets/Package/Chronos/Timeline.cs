@@ -106,7 +106,7 @@ namespace Chronos
 		protected new Animation animation;
 		protected new ParticleSystem particleSystem;
 		protected AudioSource audioSource;
-		protected NavMeshAgent navigator;
+		protected UnityEngine.AI.NavMeshAgent navigator;
 		protected WindZone windZone;
 		protected bool requestedApply = true;
 		protected float lastTimeScale;
@@ -746,7 +746,7 @@ namespace Chronos
 
 			bool hadNavigator = navigator != null;
 
-			navigator = GetComponent<NavMeshAgent>();
+			navigator = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
 			if (!hadNavigator && navigator != null)
 			{
