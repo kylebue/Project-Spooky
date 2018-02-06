@@ -71,7 +71,7 @@ public class interface_manager: MonoBehaviour {
 
 		int totalV = cLight.GetComponent<DynamicLight>().vertexWorking;
 		for (int i =1; i< lightCount; i++){
-			totalV += cLight.transform.FindChild("2DLight" + (i+1)).gameObject.GetComponent<DynamicLight>().vertexWorking;
+			totalV += cLight.transform.Find("2DLight" + (i+1)).gameObject.GetComponent<DynamicLight>().vertexWorking;
 		}
 
 

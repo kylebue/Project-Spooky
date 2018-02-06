@@ -14,7 +14,7 @@ public class IntelliderCircle : MonoBehaviour {
 
 	void Start () {
 		LightTarget = GameObject.Find("2DLight");
-		mCollider = gameObject.transform.FindChild("collider").gameObject;
+		mCollider = gameObject.transform.Find("collider").gameObject;
 	}
 	
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class IntelliderCircle : MonoBehaviour {
 			
 
 		if(!mCollider){
-			mCollider = gameObject.transform.FindChild("collider").gameObject;
+			mCollider = gameObject.transform.Find("collider").gameObject;
 			if(!mCollider){
 				Debug.LogWarning("NOT Collider Found");
 				return;
